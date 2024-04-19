@@ -4,6 +4,16 @@
 
 Ava Wallet is a decentralized application (dApp) built with React and leverages the Wagmi library for interacting with the Ethereum blockchain. This application provides a user interface for managing an Ethereum account and performing basic operations like viewing account details and sending USDC tokens.
 
+### How to run
+
+Clone the repository and install the dependencies:
+
+```bash
+npm install
+npm run dev
+npm run test
+```
+
 ## Structure
 
 ### Components
