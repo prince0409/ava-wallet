@@ -1,0 +1,154 @@
+:root {
+  background-color: #09090b;
+  color: rgba(255, 255, 255, 0.87);
+  color-scheme: dark;
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-synthesis: none;
+  font-weight: 400;
+  line-height: 1.5;
+  text-rendering: optimizeLegibility;
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+.ava-wallet-app {
+  color: #f8f8fb;
+  display: flex;
+  gap: 24px;
+  justify-content: center;
+  margin: 40px auto;
+  flex-direction: row;
+  width: 100%;
+}
+
+.account-wrapper {
+  background-color: #1a1a1c;
+  padding: 24px;
+  border-radius: 8px;
+  flex: 1;
+  max-width: 600px;
+}
+
+.command-center {
+  display: flex;
+  flex-direction: column;
+  background-color: #1a1a1c;
+  padding: 24px;
+  border-radius: 8px;
+  background-image: linear-gradient(
+    rgba(255, 255, 255, 0),
+    rgba(255, 255, 255, 0)
+  );
+  max-width: 400px;
+}
+.connector-wrapper {
+  display: flex;
+  gap: 5px;
+}
+.input-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+.label-wrapper {
+  display: flex;
+  align-items: center;
+  margin-bottom: 4px;
+  place-content: space-between;
+}
+.label {
+  font-size: 14px;
+  font-weight: 700;
+}
+.balance-label {
+  font-size: 12px;
+  color: #b4b4b7;
+}
+.input-field-wrapper {
+  display: flex;
+  background-color: #3a3a3c;
+  padding: 8px;
+  border-radius: 8px;
+  align-items: center;
+}
+.coin-icon {
+  border-radius: 100%;
+  background-color: #6c6c6e;
+  width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 12px;
+  margin-left: 6px;
+  margin-right: 6px;
+}
+.coin-label {
+  font-weight: 700;
+  font-size: 14px;
+  margin-right: 32px;
+}
+.input-field {
+  padding: 16px 12px;
+  border: 0px;
+  background-color: #58585b80;
+  color: #f8f8fb;
+  height: auto;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 400;
+  display: block;
+  min-width: 0px;
+  flex: 1;
+}
+.input-field-black {
+  background-color: #1a1a1c;
+}
+.input-field:focus {
+  background-color: transparent;
+}
+.address-input {
+  margin-bottom: 32px;
+}
+.error {
+  color: #f34333;
+  font-size: 12px;
+  margin-top: 4px;
+}
+
+.button {
+  margin-top: 8px;
+  color: #000000de;
+  background-color: white;
+  border-radius: 999px;
+  font-size: 14px;
+  padding: 12px 16px;
+  outline: 0px;
+  border: 0px;
+  cursor: pointer;
+  font-weight: 600;
+}
+.button:hover {
+  background-color: #b2b2b2;
+}
+button:disabled,
+button[disabled] {
+  background-color: #cccccc;
+  color: #666666;
+  cursor: auto;
+}
+button[disabled]:hover {
+  background-color: #cccccc;
+  color: #666666;
+}
+
+@media screen and (max-width: 992px) {
+  .ava-wallet-app {
+    flex-direction: column;
+    max-width: 400px;
+  }
+  .connector-wrapper {
+    flex-direction: column;
+  }
+}
